@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Troubleshooting — Nyxlo</title>
+<style>
+  :root {
+    --night: #0A0E2A;
+    --night-deep: #060814;
+    --indigo-veil: #1B2249;
+    --indigo-veil-soft: rgba(27, 34, 73, 0.55);
+    --moonlight: #EDEAF6;
+    --periwinkle: #8C8FE0;
+    --periwinkle-dim: rgba(140, 143, 224, 0.35);
+    --starlight-dim: #6B7093;
+    --hairline: rgba(140, 143, 224, 0.16);
+    --serif: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--night);
+    color: var(--moonlight);
+    font-family: var(--sans);
+    font-size: 16.5px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--periwinkle); }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 64px 28px 100px; }
+  .wordmark {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--moonlight);
+    text-decoration: none;
+  }
+  .back { font-size: 13.5px; color: var(--starlight-dim); text-decoration: none; display: inline-block; margin-top: 28px; }
+  .back:hover { color: var(--periwinkle); }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 34px;
+    margin: 40px 0 6px;
+    text-wrap: balance;
+  }
+  .intro { font-size: 15.5px; color: var(--starlight-dim); margin-bottom: 44px; max-width: 56ch; }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 12px;
+    color: var(--moonlight);
+  }
+  p, li { color: rgba(237,234,246,0.82); }
+  p { margin: 0 0 14px; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .issue-card {
+    border: 1px solid var(--hairline);
+    background: var(--indigo-veil-soft);
+    border-radius: 14px;
+    padding: 24px 26px;
+    margin-bottom: 20px;
+  }
+  .issue-card p:last-child, .issue-card ol:last-child, .issue-card ul:last-child { margin-bottom: 0; }
+  code {
+    background: rgba(140,143,224,0.12);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+  }
+  hr { border: 0; border-top: 1px solid var(--hairline); margin: 48px 0; }
+  .contact { font-size: 15px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <a class="wordmark" href="index.html">Nyxlo</a>
+
+  <h1>Troubleshooting</h1>
+  <p class="intro">The most common issues, and what actually fixes them.</p>
+
+  <div class="issue-card">
+    <h2>Words or ambient sound stop when my screen is off</h2>
+    <p>This is almost always your phone's battery optimization settings — some manufacturers (OnePlus, Xiaomi, Samsung especially) apply extra background-app restrictions on top of standard Android, which can pause audio apps even when they're doing everything right.</p>
+    <p><strong>On most phones:</strong> Settings &rarr; Apps &rarr; Nyxlo &rarr; Battery &rarr; set to <strong>Unrestricted</strong> (Pixel) or <strong>Don't optimize</strong> (most other Android phones).</p>
+    <p><strong>On OnePlus specifically:</strong> also check Settings &rarr; Battery &rarr; Battery optimization &rarr; the &#8942; menu &rarr; Advanced optimization, and turn off "Deep optimization." OnePlus has been known to silently reset this setting after system updates — if the issue comes back after an update, this is the first thing to recheck.</p>
+  </div>
+
+  <div class="issue-card">
+    <h2>I can't hear anything</h2>
+    <ol>
+      <li>Check your phone's media volume (not ringer volume) isn't muted.</li>
+      <li>On the controls screen, confirm <strong>Speak words</strong> and/or <strong>Soft ambient bed</strong> is actually turned on — if both are off, nothing plays.</li>
+      <li>If only the ambient bed is silent, check its volume slider hasn't been left near 0%.</li>
+    </ol>
+  </div>
+
+  <div class="issue-card">
+    <h2>The pause between words feels inconsistent</h2>
+    <p>If <strong>Gradually widen the gap</strong> is turned on, the pause is designed to slowly grow longer as your session goes on — that's expected, not a bug. If it feels genuinely irregular rather than gradually increasing, try reinstalling the latest version from the Play Store.</p>
+  </div>
+
+  <div class="issue-card">
+    <h2>A word doesn't play, or a session skips ahead unexpectedly</h2>
+    <p>Nyxlo is built to skip a word cleanly rather than get stuck if one clip fails to load — so an occasional silent skip is by design, not a crash. If this happens frequently, please get in touch (below) — that's not expected behavior.</p>
+  </div>
+
+  <hr />
+
+  <h2>Still stuck?</h2>
+  <p class="contact">Email <a href="mailto:support@nyxlo.org">support@nyxlo.org</a> and describe what you're seeing — your phone model and Android version help a lot.</p>
+
+  <a class="back" href="index.html">&larr; Back to Nyxlo</a>
+</div>
+</body>
+</html>
