@@ -408,6 +408,12 @@
     border: 1px dashed var(--hairline);
     padding: 8px 14px;
     border-radius: 999px;
+    text-decoration: none;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .play-badge:hover {
+    color: var(--periwinkle);
+    border-color: var(--periwinkle-dim);
   }
 
   footer {
@@ -574,11 +580,11 @@
     <p class="eyebrow" style="justify-content:center; display:flex;">Get Nyxlo</p>
     <h2>Some nights just need<br>a little less thinking.</h2>
     <p>Direct download for Android — no account needed to start.</p>
-    <a class="btn-primary" href="/downloads/nyxlo.apk">
+    <a class="btn-primary" href="https://nyxlo.org/downloads/nyxlo.apk">
       Download for Android
     </a>
     <div class="download-note">Android will warn about installing from outside the Play Store — that's expected, tap "install anyway."</div>
-    <div class="play-badge">On its way to Google Play</div>
+    <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nyxlo.app">Also coming to Google Play</a>
   </div>
 </section>
 
