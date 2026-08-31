@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Troubleshooting — Nyxlo</title>
+<meta name="description" content="Common issues and fixes for the Nyxlo sleep app.">
+<link rel="canonical" href="https://nyxlo.org/troubleshooting.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <style>
   :root {
     --night: #0A0E2A;
@@ -90,6 +93,15 @@
     <p>This is almost always your phone's battery optimization settings — some manufacturers (OnePlus, Xiaomi, Samsung especially) apply extra background-app restrictions on top of standard Android, which can pause audio apps even when they're doing everything right.</p>
     <p><strong>On most phones:</strong> Settings &rarr; Apps &rarr; Nyxlo &rarr; Battery &rarr; set to <strong>Unrestricted</strong> (Pixel) or <strong>Don't optimize</strong> (most other Android phones).</p>
     <p><strong>On OnePlus specifically:</strong> also check Settings &rarr; Battery &rarr; Battery optimization &rarr; the &#8942; menu &rarr; Advanced optimization, and turn off "Deep optimization." OnePlus has been known to silently reset this setting after system updates — if the issue comes back after an update, this is the first thing to recheck.</p>
+  </div>
+
+  <div class="issue-card">
+    <h2>Playback controls don't show up on my lock screen</h2>
+    <p>Audio should keep playing fine either way — this only affects whether you see pause/skip controls without unlocking your phone. A couple of settings control this, both outside Nyxlo itself:</p>
+    <ol>
+      <li>Make sure notifications are allowed for Nyxlo: Settings &rarr; Apps &rarr; Nyxlo &rarr; Notifications.</li>
+      <li>On Pixel phones specifically, there's a separate master switch for showing any app's media player on the lock screen: Settings &rarr; Display &rarr; Lock screen &rarr; Media &rarr; turn on <strong>"Show media on lock screen."</strong> If this is off, no app's controls appear on your lock screen, Nyxlo included — worth checking if Spotify or another music app has the same issue on your phone, which confirms it's this setting rather than anything app-specific.</li>
+    </ol>
   </div>
 
   <div class="issue-card">

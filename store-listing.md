@@ -23,7 +23,7 @@ WHAT'S INSIDE
 • Keeps playing through a locked screen, so you can put your phone face-down and forget it's there
 
 FREE TO START
-Free gives you 36 words, one voice, and one ambient sound — full pacing controls included, so you get a genuine feel for how Nyxlo works, not a crippled demo. Nyxlo Premium opens up the rest: the full 848-word library, all 4 voices, and all 4 ambient sounds, with new word packs added periodically.
+Free gives you 100 words, one voice, and one ambient sound — full pacing controls included, so you get a genuine feel for how Nyxlo works, not a crippled demo. Nyxlo Premium opens up the rest: the full 848-word library, all 4 voices, and all 4 ambient sounds, with new word packs added periodically.
 
 WHO IT'S FOR
 Anyone whose mind won't switch off at bedtime — racing thoughts, mental replay of the day, or just the general restlessness of lying awake waiting for sleep to arrive. Nyxlo gives your attention somewhere quiet to go instead.
@@ -35,11 +35,14 @@ No account required. No ads. No data collected beyond what stays on your device.
 Play Console needs 2–8 phone screenshots. All four here are real device
 captures, already well above the minimum resolution — just upload as-is.
 
-1. `01-splash.png` — launch screen, sets the mood
-2. `02-controls-overview.png` — session length, voice, ambient bed (the
+1. `01-controls-top.png` — session length, speak words, voice, pacing (the
    clearest single "what is this app" shot — lead with this one)
-3. `03-advanced-pacing.png` — speed/gap sliders + Start button
-4. `04-session-playing.png` — mid-session, word + time remaining
+2. `02-controls-ambience.png` — background ambience, shuffle button, all 4
+   ambient tracks
+3. `03-premium.png` — Nyxlo Premium screen: full library, all voices, all
+   ambient sounds, word packs
+4. `04-word-packs.png` — the downloadable word packs feature (Pack 2, a
+   fresh 1000-word set)
 
-Suggested order: 2, 4, 1, 3 (lead with the overview, then what a session
-looks like, then the mood, then the detail shot).
+Suggested order: 1, 4, 2, 3 (lead with the overview, then the word-packs
+differentiator, then ambience detail, then the premium pitch).

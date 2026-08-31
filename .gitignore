@@ -1,0 +1,5 @@
+# Large binaries are uploaded directly to Bluehost, not tracked in git —
+# keeps this repo small and fast to clone. See downloads/README.md.
+downloads/*.apk
+word-packs/*.zip
+word-packs/*/

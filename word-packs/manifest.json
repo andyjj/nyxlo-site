@@ -1,0 +1,14 @@
+{
+  "packs": [
+    {
+      "id": "pack2",
+      "name": "Pack 2",
+      "description": "A fresh 1000-word pool spanning nature, garden, food, animals, insects, birds, ocean, calm, sky, textures, shapes, colors, clothing, kitchen, household, tools, music, weather, places, roles, everyday, misc, gems, crafts, stationery, transport, space, and herbs.",
+      "version": 1,
+      "wordCount": 1000,
+      "sizeBytes": 18338570,
+      "url": "https://nyxlo.org/word-packs/pack2.zip",
+      "sha256": "f9fbdcb2890fc13324c30ba736ad7fc40ccbf061c5dfe7fe59f34b04a2e12618"
+    }
+  ]
+}
