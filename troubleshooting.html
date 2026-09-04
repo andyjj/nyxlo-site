@@ -90,14 +90,17 @@
 
   <div class="issue-card">
     <h2>Words or ambient sound stop when my screen is off</h2>
-    <p>This is almost always your phone's battery optimization settings — some manufacturers (OnePlus, Xiaomi, Samsung especially) apply extra background-app restrictions on top of standard Android, which can pause audio apps even when they're doing everything right.</p>
-    <p><strong>On most phones:</strong> Settings &rarr; Apps &rarr; Nyxlo &rarr; Battery &rarr; set to <strong>Unrestricted</strong> (Pixel) or <strong>Don't optimize</strong> (most other Android phones).</p>
+    <p><strong>On iPhone:</strong> this shouldn't happen — Nyxlo is set up to keep playing through a locked screen with no settings to check. If it does stop, make sure Low Power Mode isn't aggressively restricting background activity (Settings &rarr; Battery), and that Nyxlo hasn't been force-quit from the app switcher before the session started.</p>
+    <p><strong>On Android:</strong> this is almost always your phone's battery optimization settings — some manufacturers (OnePlus, Xiaomi, Samsung especially) apply extra background-app restrictions on top of standard Android, which can pause audio apps even when they're doing everything right.</p>
+    <p><strong>On most Android phones:</strong> Settings &rarr; Apps &rarr; Nyxlo &rarr; Battery &rarr; set to <strong>Unrestricted</strong> (Pixel) or <strong>Don't optimize</strong> (most other Android phones).</p>
     <p><strong>On OnePlus specifically:</strong> also check Settings &rarr; Battery &rarr; Battery optimization &rarr; the &#8942; menu &rarr; Advanced optimization, and turn off "Deep optimization." OnePlus has been known to silently reset this setting after system updates — if the issue comes back after an update, this is the first thing to recheck.</p>
   </div>
 
   <div class="issue-card">
     <h2>Playback controls don't show up on my lock screen</h2>
-    <p>Audio should keep playing fine either way — this only affects whether you see pause/skip controls without unlocking your phone. A couple of settings control this, both outside Nyxlo itself:</p>
+    <p>Audio should keep playing fine either way — this only affects whether you see pause/skip controls without unlocking your phone.</p>
+    <p><strong>On iPhone:</strong> this should appear automatically in Control Center and on the Lock Screen once a session starts, with nothing to enable. If it doesn't, try force-quitting Nyxlo from the app switcher and starting a fresh session.</p>
+    <p><strong>On Android:</strong> a couple of settings control this, both outside Nyxlo itself:</p>
     <ol>
       <li>Make sure notifications are allowed for Nyxlo: Settings &rarr; Apps &rarr; Nyxlo &rarr; Notifications.</li>
       <li>On Pixel phones specifically, there's a separate master switch for showing any app's media player on the lock screen: Settings &rarr; Display &rarr; Lock screen &rarr; Media &rarr; turn on <strong>"Show media on lock screen."</strong> If this is off, no app's controls appear on your lock screen, Nyxlo included — worth checking if Spotify or another music app has the same issue on your phone, which confirms it's this setting rather than anything app-specific.</li>
@@ -115,7 +118,7 @@
 
   <div class="issue-card">
     <h2>The pause between words feels inconsistent</h2>
-    <p>If <strong>Gradually widen the gap</strong> is turned on, the pause is designed to slowly grow longer as your session goes on — that's expected, not a bug. If it feels genuinely irregular rather than gradually increasing, try reinstalling the latest version from the Play Store.</p>
+    <p>If <strong>Gradually widen the gap</strong> is turned on, the pause is designed to slowly grow longer as your session goes on — that's expected, not a bug. If it feels genuinely irregular rather than gradually increasing, try reinstalling the latest version from the App Store or Play Store.</p>
   </div>
 
   <div class="issue-card">
@@ -126,7 +129,7 @@
   <hr />
 
   <h2>Still stuck?</h2>
-  <p class="contact">Email <a href="mailto:support@nyxlo.org">support@nyxlo.org</a> and describe what you're seeing — your phone model and Android version help a lot.</p>
+  <p class="contact">Email <a href="mailto:support@nyxlo.org">support@nyxlo.org</a> and describe what you're seeing — your phone model and OS version help a lot.</p>
 
   <a class="back" href="index.html">&larr; Back to Nyxlo</a>
 </div>
