@@ -122,9 +122,35 @@
   }
 
   /* ---------- NAV ---------- */
+  .announce-bar {
+    position: relative;
+    z-index: 41;
+    background: var(--indigo-veil);
+    border-bottom: 1px solid var(--hairline);
+    text-align: center;
+    padding: 10px 28px;
+  }
+  .announce-bar a {
+    color: var(--moonlight);
+    text-decoration: none;
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+  .announce-link {
+    color: var(--periwinkle);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
   nav {
     position: fixed;
-    top: 0;
+    /* Sits right below .announce-bar -- a fixed px match for that bar's
+       rendered height (padding + up to two lines of wrapped text on a
+       narrow phone) rather than 0, so it doesn't cover the banner. The
+       banner itself is a normal in-flow element, so it pushes .hero's
+       bottom-anchored content down by its own real height automatically;
+       only nav's offset has to be hand-matched to it. */
+    top: 62px;
     left: 0;
     right: 0;
     z-index: 40;
@@ -499,6 +525,9 @@
 </head>
 <body>
 
+<div class="announce-bar">
+  <a href="nyxlorecord-help.html">New: NyxloRecord — record your own voice for Nyxlo. <span class="announce-link">Learn more &rarr;</span></a>
+</div>
 <nav>
   <a class="wordmark" href="#top">Nyxlo</a>
   <a class="nav-cta" href="#download">Download</a>
