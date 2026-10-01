@@ -101,17 +101,53 @@
   }
   hr { border: 0; border-top: 1px solid var(--hairline); margin: 48px 0; }
   .contact { font-size: 15px; }
+
+  /* ---------- HERO (matches index.html's hero treatment) ---------- */
+  .record-hero {
+    position: relative;
+    isolation: isolate;
+    min-height: clamp(360px, 48vh, 560px);
+    display: flex;
+    align-items: flex-end;
+  }
+  .record-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(to top, var(--night) 4%, rgba(10,14,42,0.6) 44%, rgba(10,14,42,0.2) 70%),
+      linear-gradient(to bottom, rgba(6,8,20,0.6) 0%, rgba(6,8,20,0) 32%),
+      url("img/nyxlorecord-hero.jpg");
+    background-size: cover;
+    background-position: center 40%;
+  }
+  .record-hero-inner { width: 100%; padding-top: 28px; padding-bottom: 36px; }
+  .record-hero-content { margin-top: 36px; max-width: 520px; }
+  .record-hero-content .badge {
+    margin-bottom: 16px;
+    background: rgba(6,8,20,0.55);
+    border-color: rgba(140,143,224,0.5);
+    backdrop-filter: blur(2px);
+  }
+  .record-hero-content h1 { margin: 0 0 10px; }
+  .record-hero-content .intro { color: rgba(237,234,246,0.85); margin-bottom: 0; }
 </style>
 </head>
 <body>
 
+<div class="record-hero">
+  <div class="record-hero-bg" role="img" aria-label="Illustration of a person wearing headphones, recording into a microphone, under a crescent moon and starfield"></div>
+  <div class="wrap record-hero-inner">
+    <a class="wordmark" href="index.html">Nyxlo</a>
+    <div class="record-hero-content">
+      <span class="badge">Coming soon</span>
+      <h1>NyxloRecord</h1>
+      <p class="intro">A companion app for recording your own voice — a parent, a partner, yourself — and turning it into a word pack that plays right inside Nyxlo.</p>
+    </div>
+  </div>
+</div>
+
 <div class="wrap">
-  <a class="wordmark" href="index.html">Nyxlo</a>
-
-  <h1>NyxloRecord</h1>
-  <p class="intro">A companion app for recording your own voice — a parent, a partner, yourself — and turning it into a word pack that plays right inside Nyxlo.</p>
-  <span class="badge">Coming soon</span>
-
   <div class="summary-card">
     <p><strong>The short version:</strong> NyxloRecord is a separate, free-standing app. You record yourself saying each word from a list, it builds a <code>.nyx</code> file from whatever you've recorded, and you import that file into Nyxlo from the Word packs screen. From then on, Nyxlo can read your sessions back in that voice instead of the built-in ones.</p>
   </div>
